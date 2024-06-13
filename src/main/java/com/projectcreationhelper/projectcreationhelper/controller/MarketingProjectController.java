@@ -1,6 +1,7 @@
 package com.projectcreationhelper.projectcreationhelper.controller;
 
 import com.projectcreationhelper.projectcreationhelper.model.MarketingProject;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.projectcreationhelper.projectcreationhelper.service.impl.MarketingProjectService;
 
@@ -8,12 +9,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/marketing-projects")
+@RequiredArgsConstructor
 public class MarketingProjectController {
     private final MarketingProjectService service;
-
-    public MarketingProjectController(MarketingProjectService service) {
-        this.service = service;
-    }
 
     @GetMapping("/get")
     public List<MarketingProject> getAll() {
