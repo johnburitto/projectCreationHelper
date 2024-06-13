@@ -16,5 +16,6 @@ public class NewsProject extends Project {
     public List<String> layout;
     public List<String> webDevelopment;
     public List<String> deployment;
+    private List<Item> items;
     public List<String> qa;
 }

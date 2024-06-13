@@ -16,4 +16,6 @@ public class Project {
     public User user;
     public LocalDateTime createdAt;
     public LocalDateTime updatedAt;
+    private String createdBy;
+    private String updatedBy;
 }

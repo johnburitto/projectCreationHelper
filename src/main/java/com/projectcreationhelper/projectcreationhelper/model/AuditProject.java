@@ -13,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class AuditProject extends Project {
+
     public SiteFramework siteFramework;
     public String additionalFramework;
     public List<String> remarks;
