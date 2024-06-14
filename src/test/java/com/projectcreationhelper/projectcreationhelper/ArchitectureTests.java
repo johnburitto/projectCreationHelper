@@ -1,4 +1,11 @@
 package com.projectcreationhelper.projectcreationhelper;
+/*
+  @author   Olga Bosovik
+  @project   project-creation-helper
+  @class  ArchTests
+  @version  1.0.0
+  @since 11.05.24 - 12.40
+*/
 
 import com.tngtech.archunit.core.domain.JavaClasses;
 import com.tngtech.archunit.core.importer.ClassFileImporter;
@@ -177,7 +184,6 @@ class ArchitectureTests {
                 .check(applicationClasses);
     }
 
-
     @Test
     void shouldNotUseFieldsAutowired() {
         noFields()
@@ -185,7 +191,6 @@ class ArchitectureTests {
                 .beAnnotatedWith(Autowired.class)
                 .check(applicationClasses);
     }
-
 
     @Test
     public void classes_should_not_access_standard_streams_defined_by_hand() {
@@ -232,7 +237,7 @@ class ArchitectureTests {
                 .because("Public fields are not allowed in model classes")
                 .check(applicationClasses);
     }
-/*
+
      @Test
     void shouldHaveIdField() {
         fields()
@@ -242,7 +247,6 @@ class ArchitectureTests {
                 .should().bePrivate()
                 .check(applicationClasses);
     }
-*/
 
 
     @Test
@@ -270,8 +274,6 @@ class ArchitectureTests {
                     .should().beInterfaces()
                 .check(applicationClasses);
     }
-
-
 
 
 }

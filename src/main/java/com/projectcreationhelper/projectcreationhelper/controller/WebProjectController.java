@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/web-projects")
+@CrossOrigin("*")
 public class WebProjectController {
     private final WebProjectService service;
 
@@ -33,7 +34,6 @@ public class WebProjectController {
     @PutMapping("/update/{id}")
     public WebProject update(@PathVariable String id, @RequestBody WebProject webProject) {
         webProject.setId(id);
-
         return service.update(webProject);
     }
 

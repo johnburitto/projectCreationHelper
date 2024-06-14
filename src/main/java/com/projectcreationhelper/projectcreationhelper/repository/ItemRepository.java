@@ -1,10 +1,10 @@
 package com.projectcreationhelper.projectcreationhelper.repository;
 /*
-  @author   george
-  @project   spb-base
-  @class  ItemRepository
-  @version  1.0.0 
-  @since 11.02.24 - 12.22
+  @author   Olga Bosovik
+  @project   project-creation-helper
+  @class  Repository
+  @version  1.0.0
+  @since 01.05.24 - 18.22
 */
 
 

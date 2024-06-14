@@ -1,10 +1,10 @@
 package com.projectcreationhelper.projectcreationhelper.model;
 /*
-  @author   george
-  @project   spb-base
+  @author   Olga Bosovik
+  @project   project-creation-helper
   @class  Item
-  @version  1.0.0 
-  @since 11.02.24 - 12.15
+  @version  1.0.0
+  @since 01.05.24 - 18.20
 */
 
 import lombok.*;

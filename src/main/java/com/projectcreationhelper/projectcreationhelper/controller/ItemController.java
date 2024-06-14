@@ -4,7 +4,7 @@ package com.projectcreationhelper.projectcreationhelper.controller;
   @project   spb-base
   @class  ItemController
   @version  1.0.0 
-  @since 11.02.24 - 12.40
+  @since 03.05.24 - 12.40
 */
 
 
@@ -42,6 +42,5 @@ public class ItemController {
     public void eraseById(@PathVariable String id) {
          service.delete(id);
     }
-
 
 }

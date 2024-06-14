@@ -1,11 +1,11 @@
 package com.projectcreationhelper.projectcreationhelper.service.impl;
 
 /*
-  @author   george
-  @project   spb-base
-  @class  ItemService
-  @version  1.0.0 
-  @since 11.02.24 - 12.28
+  @author   Olga Bosovik
+  @project   project-creation-helper
+  @class  ItemServiceImpl
+  @version  1.0.0
+  @since 02.05.24 - 18.32
 */
 
 
@@ -63,7 +63,5 @@ public class ItemServiceImpl {
         log.info(" delete id = " + id);
         repository.deleteById(id);
     }
-
-
 
 }

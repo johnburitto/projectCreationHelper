@@ -37,7 +37,6 @@ public class WebProjectService implements IService<WebProject> {
     @Override
     public WebProject update(WebProject user) {
         user.setUpdatedAt(LocalDateTime.now());
-
         return repository.save(user);
     }
 
